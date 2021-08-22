@@ -1,0 +1,185 @@
+.section2 {
+    width: 100% !important;
+    height: 700px;
+    display: flex;
+    // background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @media (max-width: 375px){
+        width: 100%;
+    }
+    .slideshow-container {
+        width: 90%;
+        height: 600px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        @media (max-width:1050px){
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width: 790px){
+            max-width: 600px;
+            width: 100%;
+        }
+        @media (max-width: 467px){
+            max-width: 460px;
+            width: 100%;
+        }
+        .mySlides {
+            display: none;
+            .first{
+                height: 300px;
+                margin-top: 10px;
+                @media (max-width: 790px){
+                    height: 200px;
+                }
+            }
+            .second{
+                height: 300px;
+                margin-top: 35px;
+                @media (max-width: 790px){
+                    height: 200px;
+                }
+                @media (max-width:400px){
+                    height: 150px;
+                }
+            }
+            .third{
+                height: 300px;
+                margin-top: 35px;
+                @media (max-width: 790px){
+                    height: 200px;
+                }
+                @media (max-width:400px){
+                    height: 150px;
+                }
+            }
+            .text {
+                color: #39517f;
+                font-size: 22px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 48px;
+                right: 0.8%;
+                font-family: "BPG ExtraSquare Mtavruli", sans-serif;
+                width: 100%;
+                text-align: center;
+                @media (max-width: 790px){
+                    font-size: 15px;
+                }
+              }
+              .numbertext {
+                color: #39517f;
+                font-size: 18px;
+                margin-top: 7%;
+                // padding: 8px 12px;
+                position: absolute;
+                top: 0;
+                @media(max-width:1400px){
+                    margin-top: 100px;
+                }
+                @media (max-width: 790px){
+                    margin-top: 170px;
+                }
+                @media (max-width:400px){
+                    margin-top: 200px;
+                }
+              }
+          }
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+              }
+              
+              @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+              }
+          }
+          
+          .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            background-color: #ffbec9;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            @media (max-width: 790px){
+                font-size: 15px;
+            }
+            @media (max-width: 320px){
+                font-size: 10px;
+            }
+          }
+          .prev{
+              left: 10%;
+              border-radius: 80%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              @media (max-width: 467px){
+                  left: 0;
+              }
+          }
+          .next {
+            right: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 80%;
+            @media (max-width: 467px){
+                right: 0;
+            }
+          }
+          .prev:hover, .next:hover {
+            background-color: #7795ce;
+          }
+          
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background: linear-gradient(to left, #ffbec9, #cbdbfa, #7795ce);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #ffbec9;
+      }
+      .hint{
+        margin-top: 5px;
+        font-family: "BPG Nino Medium", sans-serif;
+        font-size: 12px;
+        color: #39517f;
+        @media (max-width:420px){
+            font-size: 10px;
+        }
+        @media (max-width:330px){
+            font-size: 8px;
+        }
+      }
+}

@@ -1,0 +1,217 @@
+// Section 3 styles written here
+.section3{
+    width: 100%;
+    height: 300px;
+    // background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+    @media (max-width: 1220px){
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+    }
+    @media (max-width: 375px){
+        width: 100%;
+    }
+    .section3-h2:before,
+    .section3-h2:after {
+        content: '';
+        margin: 0 20px 0 0;
+        flex: 1 0 20px;
+        border-bottom: 1px solid #cfc5c2;
+    }
+    .section3-h2:after {
+        margin: 0 0 0 20px;
+    }
+    .section3-h2 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "BPG ExtraSquare Mtavruli", sans-serif;
+        font-size: 22px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        position: relative;
+        color: #3f5070;
+    }
+    .favourite-items{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @media (max-width: 1250px){
+            max-width: 1250px;
+            width: 100%;
+        }
+        @media (max-width: 1220px){
+            display: flex;
+            flex-direction: column;
+        }
+        @media (max-width: 850px){
+            margin-right: 10%;
+        }
+        @media (max-width: 700px){
+            margin-right: 10%;
+        }
+        @media (max-width: 600px){
+            margin-right: 10%;
+        }
+        @media (max-width: 500px){
+            margin-right: 50%;
+        }
+        @media (max-width: 400px){
+            margin-right: 50%;
+        }
+        @media (max-width: 350px){
+            margin-right: 50%;
+        }
+        .fav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 20%;
+        justify-content: flex-start;
+        @media (max-width: 350px){
+            margin-right: 10%;
+            width: 10%;
+        }
+        .fav-pick{
+            height: 200px;
+            margin-right: 150px;
+            margin-bottom: 10px;
+            @media (max-width: 350px){
+                height: 150px;
+            }
+        }
+        .fav-pick:hover{
+            transform: scale(1.1);
+            transition: all 0.5ms linear 0s;
+            filter: brightness(1);
+        }
+        .section3-h3{
+            font-size: 13px;
+            margin-bottom: 20px;
+            font-family: "BPG Nino Medium", sans-serif;
+            @media (max-width: 350px){
+                font-size: 12px;
+            }
+        }
+        .hideset{
+            @media only screen and (max-width: 1000px){
+                width: 200px; 
+               }
+        }
+    }
+  }
+}
+
+//   section4  styles written here
+.section4{
+    width: 100%;
+    margin-top: 50px;
+    // background-color: #39517f;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @media (max-width: 375px){
+        width: 100%;
+    }
+    .us:before,
+    .us:after {
+        content: '';
+        margin: 0 20px 0 0;
+        flex: 1 0 20px;
+        border-bottom: 1px solid #cfc5c2;
+    }
+    .us:after {
+        margin: 0 0 0 20px;
+    }
+    .us{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "BPG ExtraSquare Mtavruli", sans-serif;
+        font-size: 22px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        position: relative;
+        color: #3f5070;
+        @media (max-width: 370px){
+            font-size: 18px;
+        }
+    }
+    
+    .content-div{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        .left-div{
+            width: 60%;
+            font-family: "BPG Nino Medium", sans-serif; 
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            color: #39517f;
+            @media (max-width: 1400px){
+                font-family: "BPG Nino Medium", sans-serif;
+                line-height: 20px;
+                letter-spacing: normal;
+                font-size: 15px;
+            }
+            @media (max-width: 750px){
+                font-family: "BPG Nino Medium", sans-serif;
+                font-size: 12px;
+                max-width: 70%;
+            }
+            @media (max-width: 600px){
+                font-family: "BPG Nino Medium", sans-serif;
+                font-size: 12px;
+                max-width: 100%;
+                width: 100%;
+            }
+            @media (max-width: 595px){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 11px;
+                margin-left: 20px;
+            }
+            @media (max-width: 370px){
+                margin-left: 10px;
+                height: 310px;
+            }
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+.about-logo{
+    height: 200px;
+    @media (max-width: 750px){
+        height: 150px;
+    }
+    @media (max-width: 600px){
+    display: none;
+}
+
+}
+.about-logo:hover{
+    cursor: pointer;
+}
+}

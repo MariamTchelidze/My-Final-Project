@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია/სისტემაში შესვლა</title>
+    <script src="https://kit.fontawesome.com/c63b95ce38.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/circle-cropped-logo.png" >
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-extrasquare-mtavruli/css/bpg-extrasquare-mtavruli.min.css">
+<link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/arial-geo-bold/css/arial-geo-bold.min.css">
+<link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-medium/css/bpg-nino-medium.min.css">
+<meta property="og:url"                content="https://mariamtchelidze.github.io/take-and-wear/SignUp.html" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Take & Wear ნომერ პირველი, აქსესუარების ნაკრებების მაღაზია საქართველოში!" />
+<meta property="og:description"        content="გვეწვიეთ ჩვენი ონლაინ მაღაზიის საიტზე, დარეგისტრირდი და იშოპინგე მარტივად!" />
+<meta property="og:image"              content="https://ssu.edu.ge/wp-content/uploads/2021/03/Property-registration-e1437553645318.jpg" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="hidden-user" href="SignUp.html" target="_blank"><i class="fas fa-user"></i></a>
+            <a class="hidden-user" href="#"><i class="fas fa-shopping-bag" id="bagLeft" ></i></a>
+            <a href="#" class="hidden-user"><i class="fas fa-search" id="searchBar1"></i></a>
+            <a href="index.html"><h1 class="header-h1">Take & Wear</h1></a>
+            <h2 class="header-h2">Accessories boxes since 2020</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/takeandwearaccssesories/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/takeandwear.accessories/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/messages/t/1407018582906696" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="SignUp.html" target="_blank"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag" id="bag"></i></a>
+            </div>
+            </div>
+    </header>
+    <section class="section1">
+      <div class="scrollmenu">
+        <div id="toggleButton" class="toggle-button">
+          <a href="#"><i class="fas fa-bars"></i></a>
+      </div>
+          <nav id="navbarLinks" class="navbar-links">
+              <ul class="nav-ul">
+                  <li class="section1-li">
+                      <label for="currencySelect1"></label>
+                      <select class='label1 label12' name="currencies" id="currencySelect1">
+                          <option value="Gel">GEL</option>
+                          <option value="USD">USD</option>
+                          <option value="EURO">EUR</option>
+                          <option value="RUB">RUB</option>
+                          <option value="AZN">AZN</option>
+                          <option value="AMD">AMD</option>
+                          <option value="AMD">TRY</option>
+                      </select>
+                  </li>
+                  <li class="section1-li li12"><a class="section1-a" href="allproducts.html" target="_blank">ყველა პროდუქტი</a></li>
+                  <li class="section1-li li12"><a class="section1-a" href="AboutUs.html" target="_blank">ჩვენს შესახებ</a></li>
+                  <li class="section1-li li12"><a class="section1-a" href="SignUp.html" target="_blank">რეგისტრაცია </a></li>
+              </ul>
+          </nav>
+        </div>
+  </section>
+    <section class="vh-100 section-color gradient-custom">
+        <div class="container my-background py-5 h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+              <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">რეგისტრაცია</h3>
+                  <form>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+      
+                        <div class="form-outline">
+                          <input type="text" id="firstName" class="form-control form-control-lg" required />
+                          <label class="form-label" for="firstName" aria-required="true">სახელი<span class="required">*</span></label>
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4">
+      
+                        <div class="form-outline">
+                          <input type="text" id="lastName" class="form-control form-control-lg" required />
+                          <label class="form-label" for="lastName" aria-required="true">გვარი<span class="required">*</span></label>
+                        </div>
+      
+                      </div>
+                    </div>
+      
+                    <div class="row">
+                      <div class="col-md-6 mb-4 d-flex align-items-center">
+      
+                        <div class="form-outline datepicker w-100">
+                          <input type="text" class="form-control form-control-lg" id="birthdayDate" required />
+                          <label for="birthdayDate" class="form-label" aria-required="true">დაბადების თარიღი<span class="required">*</span></label>
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4">
+      
+                        <h6 class="mb-2 pb-1">სქესი: </h6>
+      
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="femaleGender"
+                            value="option1"
+                            checked
+                          />
+                          <label class="form-check-label" for="femaleGender">მდედრობითი</label>
+                        </div>
+      
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="maleGender"
+                            value="option2"
+                          />
+                          <label class="form-check-label" for="maleGender">მამრობითი</label>
+                        </div>
+      
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="otherGender"
+                            value="option3"
+                          />
+                          <label class="form-check-label" for="otherGender">სხვა</label>
+                        </div>
+      
+                      </div>
+                    </div>
+      
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="email" id="emailAddress" class="form-control form-control-lg" required/>
+                          <label class="form-label" for="emailAddress" aria-required="true">იმეილი<span class="required">*</span></label>
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="tel" id="phoneNumber" class="form-control form-control-lg" required />
+                          <label class="form-label" for="phoneNumber" aria-required="true">პაროლი<span class="required">*</span></label>
+                        </div>
+      
+                      </div>
+                    </div>
+      
+                    <div class="row">
+                      <div class="col-12">
+      
+                    
+      
+                      </div>
+                    </div>
+      
+                    <div class="mt-4 pt-2">
+                      <input class="btn btn-primary btn-lg" type="submit" value="რეგისტრაცია" />
+                    </div>
+                    <p aria-hidden="true" id="required-description">
+                      <span class="required">*</span>აუცილებელია
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer class="signup-footer">
+        <div class="footer-container">
+            <a href="index.html"><img class="signup-footer-logo" src="images/circle-cropped-logo.png" alt="logo"></a>
+                <h5 class="footer-h5">copyright Take & Wear © 2020Copyright</h5>
+        </div>
+        </footer>
+    <script src="script.js"></script>
+    <script src="script3.js"></script>
+    <script src="sign-up.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #FFF1EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-wraper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFF1EE;
+    align-items: center;
+    @media (max-width: 600px){
+        flex-direction: column;
+            flex-wrap: wrap;
+    }
+    @media (max-width:370px){
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .logo-div{
+        margin-left: 10%;
+        .footer-logo{
+            height: 150px;
+            margin-right: 30px;
+            @media (max-width: 730px){
+                height: 90px;
+                margin-left: 10px;
+            }
+            @media (max-width:370px){
+                height: 50px;
+                
+            }
+        }
+    }
+    
+    .more, .shop, .connect, .logo-div{
+        width: 30%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        @media (max-width:600px){
+            margin-top: 60px;
+        }
+        .hide{
+            display: none;
+            @media (max-width:600px){
+                display: block;
+            }
+        }
+        .hidden-li{
+        @media (max-width: 1300px){
+            display: block;
+        }
+    }
+        .footer-h4{
+            font-size: 20px;
+            color: #3f5070;
+            font-family: "BPG ExtraSquare Mtavruli", sans-serif;
+            text-decoration: underline;
+            @media (max-width: 730px){
+                font-size: 15px;
+            }
+        }
+        .footer-lit{
+            font-family: "BPG ExtraSquare Mtavruli", sans-serif;
+            color: #3f5070;
+            font-size: 15px;
+            @media (max-width: 730px){
+                font-size: 12px;
+            }
+        }
+        .footer-lit:hover{
+            transform: scale(1.1);
+            transition: all 0.5ms linear 0s;
+        }
+        .my{
+            font-size: 15px;
+            font-family: "BPG ExtraSquare Mtavruli", sans-serif;
+            color: #3f5070;
+            gap: 30px;
+            @media (max-width:600px){
+                display: block;
+            }
+        }
+    }
+    .shop {
+        width: 30%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        @media (max-width: 1300px){
+            display: none;
+        }
+    }
+    .connect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        .for-hide {
+            @media (max-width:600px){
+                display: none;
+            }
+        }
+        .h4-2{
+            @media (max-width:600px){
+                display: none;
+            }
+        }
+        .contact-form{
+            @media (max-width:600px){
+                display: none;
+            }
+        }
+        .subscribe-text{
+            font-family: "BPG ExtraSquare Mtavruli", sans-serif;
+            font-size: 10px;
+                @media (max-width:600px){
+                    display: none;
+                }
+        }
+        .footer-a{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: cenfter;
+            align-items: flex-start;
+            gap: 15px;
+            @media (max-width: 675px){
+                justify-content: center;
+                grid-area: 50px;
+            }
+            .fa-android, .fa-apple, .fa-snapchat-ghost, .fa-pinterest, .fa-twitter-square{
+                @media (max-width: 675px){
+                    display: none;
+                }
+            }
+            .fa-facebook, .fa-instagram{
+                @media (max-width: 675px){
+                    align-self: center;
+                }
+            }
+            .footer-fb:hover{
+                transform: scale(1.1);
+                transition: all 0.5ms linear 0s;
+                color: #4267B2;
+            }
+            .footer-inst:hover{
+                transform: scale(1.1);
+                transition: all 0.5ms linear 0s;
+                color: #8a3ab9;
+            }
+            .fa-android:hover{
+                transform: scale(1.1);
+                transition: all 0.5ms linear 0s;
+                color: #32DE84;
+            }
+            .fa-apple:hover{
+                transform: scale(1.1);
+                transition: all 0.5ms linear 0s;
+                color: #A2AAAD;
+            }
+            .fa-snapchat-ghost:hover{
+                transform: scale(1.1);
+                transition: all 0.5ms linear 0s;
+                color: #FFFC00;
+            }
+            .fa-pinterest:hover{
+                transform: scale(1.1);
+                transition: all 0.5ms linear 0s;
+                color: #E60023;
+            }
+            .fa-twitter-square:hover{
+                transform: scale(1.1);
+                transition: all 0.5ms linear 0s;
+                color: #1DA1F2;
+            }
+        }
+        .mail-field{
+            @media (max-width:850px){
+                max-width: 50%;
+                width: 100%;
+            }
+        }
+    }
+}
+}
