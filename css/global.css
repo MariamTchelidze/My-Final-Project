@@ -2347,7 +2347,7 @@ a {
   width: 200px;
 }
 
-.catalog .nav2-ul .product-li .price-div .price-selector:hover {
+.catalog .nav2-ul .product-li .price-div:hover {
   cursor: pointer;
   border: 1px solid #FF8197;
   -webkit-transition: all 5s linear 0s;
